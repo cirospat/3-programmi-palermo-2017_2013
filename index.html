@@ -38,12 +38,18 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
+     <!-- vecchia impostazione 
     <link rel="exhibit/data"
     type="application/jsonp"
     href="https://spreadsheets.google.com/feeds/list/1FxO6WwVZ30lmFV1hqirhg7PgaUiqjumdGeuU5rTv818/onetwny/public/basic?alt=json-in-script"
-    ex:converter="googleSpreadsheets" />
+    ex:converter="googleSpreadsheets" /> -->
 
+    <!-- nuova impostazione -->
+    <link rel="exhibit/data" 
+    type="text/csv"
+    href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5NC2zgldPB-AQvrwSfs-s9XEkdh6szkIqAblZYmnXwBQjw8dzAnXUnNNy-gMeBkOhT3b8FyVWaWdD/pub?gid=1415632196&single=true&output=csv"     />
 
+	
     <script src="./js/dist/exhibit-api.js?locale=it"></script>
 
 
@@ -161,7 +167,7 @@
 						<div class="table-responsive">
 							<table class="table" ex:class-content=".territorio">
 								<tr>
-									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('{{.URL}}'); return false;" target="_blank"><strong><span ex:content=".progetto" class="accussì"></strong></span></a></td>
+									<td><a ex:href-content=".URL" ex:onclick-subcontent="trackOutboundLink('.URL'); return false;" target="_blank"><strong><span ex:content=".progetto" class="accussì"></strong></span></a></td>
 									<td><span ex:content=".importo"></td>
 									<td><span ex:content=".referente"></span></td>
 									<td><span ex:content=".tag" ></span></td>
